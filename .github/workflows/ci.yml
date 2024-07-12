@@ -1,7 +1,7 @@
 name: ci
 
 on:
-  pull_request:
+  push:
     branches:
     - '**'
 
@@ -20,4 +20,4 @@ jobs:
     uses: babylonchain/.github/.github/workflows/reusable_docker_pipeline.yml@hiep/add-reusable-workflows
     secrets: inherit
     with:
-     publish: false
+     publish: true
